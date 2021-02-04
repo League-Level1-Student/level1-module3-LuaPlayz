@@ -1,5 +1,6 @@
 package _01_static_smiley_blues;
 
+import java.awt.Color;
 import java.net.URL;
 
 import javax.swing.Icon;
@@ -22,8 +23,7 @@ public class Smiley extends JLabel {
 		Icon icon = new ImageIcon(imageURL);
 		return icon;
 	}
+
 	
-	public static void setColor(String newColor) {
-		color = newColor;
 	}
-}
+

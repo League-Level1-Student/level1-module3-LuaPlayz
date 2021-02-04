@@ -4,7 +4,7 @@ package _03_jars._1_intro_to_jars;
 public class RobotInAJar {
 	
 	/* 1.   Create a String variable and initialize it to your name  */
-	
+	String name="Chloe";
 	
 	/* If you did not make any syntax errors, there should be no red lines under your code. 
 	 * This is because the type String is part of the basic Java language that all programs  
