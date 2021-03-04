@@ -83,14 +83,17 @@ public class MagicBox extends JPanel implements Runnable, MouseListener {
 	public void mouseClicked(MouseEvent e) {
 		// TODO Auto-generated method stub
 		MediaPalace m=new MediaPalace();
+		int water=-3364497;
+		int MouseColor=backgroundImage.getRGB(e.getX(), e.getY());
+		if(MouseColor==water) {
 		m.speak("Good");
-		
+		}
 	}
 
 	@Override
 	public void mousePressed(MouseEvent e) {
 		// TODO Auto-generated method stub
-		
+		System.out.println(backgroundImage.getRGB(e.getX(), e.getY()));
 	}
 
 	@Override
