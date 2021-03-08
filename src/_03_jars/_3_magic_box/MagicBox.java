@@ -88,6 +88,11 @@ public class MagicBox extends JPanel implements Runnable, MouseListener {
 		if(MouseColor==water) {
 		m.speak("Good");
 		}
+		
+		int t=-9335159;
+		if(MouseColor==t) {
+			m.loadImageFromTheInternet("https://ca-times.brightspotcdn.com/dims4/default/ef3685f/2147483647/strip/true/crop/640x360+0+33/resize/1200x675!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F83%2F94%2Fc40e730308004175ebb16b63c86a%2Fsdut-chocolate-truffles-20160820");
+		}
 	}
 
 	@Override
