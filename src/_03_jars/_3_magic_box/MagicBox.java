@@ -12,9 +12,11 @@ import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
 
 import javax.imageio.ImageIO;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
@@ -51,9 +53,9 @@ public class MagicBox extends JPanel implements Runnable, MouseListener {
 			System.err.println(w.getMessage());
 		}
 	}
-
+	JFrame frame = new JFrame("The Magic Box contains many secrets...");
 	private void createUI() {
-		JFrame frame = new JFrame("The Magic Box contains many secrets...");
+		
 		frame.add(this);
 		setPreferredSize(new Dimension(backgroundImage.getWidth(), backgroundImage.getHeight()));
 		frame.pack();
@@ -89,12 +91,26 @@ public class MagicBox extends JPanel implements Runnable, MouseListener {
 		m.speak("Good");
 		}
 		
-		int t=-9335159;
+		int t=-69429;
 		if(MouseColor==t) {
-			m.loadImageFromTheInternet("https://ca-times.brightspotcdn.com/dims4/default/ef3685f/2147483647/strip/true/crop/640x360+0+33/resize/1200x675!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F83%2F94%2Fc40e730308004175ebb16b63c86a%2Fsdut-chocolate-truffles-20160820");
+			try {
+				JLabel l= m.loadImageFromTheInternet("https://ca-times.brightspotcdn.com/dims4/default/ef3685f/2147483647/strip/true/crop/640x360+0+33/resize/1200x675!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F83%2F94%2Fc40e730308004175ebb16b63c86a%2Fsdut-chocolate-truffles-20160820");
+			frame.add(l);
+			frame.pack();
+			} catch (MalformedURLException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
 		}
+		
+		int tr=-2047618;
+		if (MouseColor==tr) {
+			m.speak("ok");
+			m.playMusicOnComputer(fileName);
+		}
+		
 	}
-
+ 
 	@Override
 	public void mousePressed(MouseEvent e) {
 		// TODO Auto-generated method stub
