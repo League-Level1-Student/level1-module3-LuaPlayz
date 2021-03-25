@@ -101,12 +101,12 @@ public class MagicBox extends JPanel implements Runnable, MouseListener {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
-		}
+		} 
 		
 		int tr=-2047618;
 		if (MouseColor==tr) {
-			m.speak("ok");
-			m.playMusicOnComputer(fileName);
+			m.playMusicOnComputer("/Users/chloemcbook/git/level1-module3-LuaPlayz/src/_03_jars/_3_magic_box/s.wav");
+	
 		}
 		
 	}
