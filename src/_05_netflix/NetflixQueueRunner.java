@@ -23,7 +23,9 @@ public static void main(String[] args) {
 	Queue.printMovies();
 	
 	Movie BestMovie = Queue.getBestMovie();
+	Movie SecondBestMovie = Queue.getSecondBestMovie();
 	JOptionPane.showMessageDialog(null, "The best movie is " + BestMovie.getTitle());
+	JOptionPane.showMessageDialog(null, "The second best movie is " + SecondBestMovie.getTitle());
 	
 	
 }
